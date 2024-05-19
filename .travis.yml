@@ -5,6 +5,5 @@ services:
   
 before_install:
   - docker build -t bala/Docker -f Dockerfile.dev .
-
 script:
   - docker run -e CI-true bala/Docker npm run test
